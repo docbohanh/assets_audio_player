@@ -761,7 +761,8 @@ public class Player : NSObject, AVAudioPlayerDelegate {
         self.channel.invokeMethod(Music.METHOD_IS_BUFFERING, arguments: value)
     }
     
-    func seek(to: Int){
+    func seek(to: Int) {
+        self.setBuffering(true)
         let targetTime = CMTimeMakeWithSeconds(Double(to) / 1000.0, preferredTimescale: 1)
         self.player?.seek(to: targetTime, toleranceBefore: .zero, toleranceAfter: .zero)
     }
