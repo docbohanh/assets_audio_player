@@ -1,5 +1,10 @@
 # 🎧 assets_audio_player  🔊
 
+## Library issues
+
+- Type mismatch: inferred type is Intent? but Intent was expected: https://github.com/florent37/Flutter-AssetsAudioPlayer/issues/382#issuecomment-765919461
+
+
 [![pub package](https://img.shields.io/pub/v/assets_audio_player.svg)](
 https://pub.dartlang.org/packages/assets_audio_player)
 <a href="https://github.com/Solido/awesome-flutter">
